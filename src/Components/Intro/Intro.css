@@ -1,0 +1,134 @@
+.intro
+{
+        display: flex;
+        height: 100vh;
+        margin-top: 7rem;
+        /* gap: 2rem; */
+}
+.i-left
+{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 4rem;
+}
+.i-name
+{
+        display: flex;
+        flex-direction: column;
+}
+
+.i-name>:nth-child(1)
+{
+        color: var(--black);
+        font-weight: bold;
+        font-size: 3rem;
+}
+.i-name>:nth-child(2)
+{
+        color: var(--orange);
+        font-weight: bold;
+        font-size: 3rem;
+}
+.i-name>:nth-child(3)
+{
+        color: var(--grey);
+        font-weight: 100;
+        font-size: 14px;
+        margin-top: 10px;
+}
+.i-button
+{
+        width: 6rem;
+        height: 2rem;
+}
+.i-icons
+{
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+}
+.i-icons>*
+{
+        transform: scale(0.5);
+}
+.i-icons>*:hover
+{
+cursor: pointer;
+}
+
+.i-right
+{
+
+        flex: 1;
+        position: relative;
+}
+.i-right>*
+{
+position: absolute;
+z-index: 1;
+}
+.i-right>:nth-child(1)
+{
+        transform: scale(0.69);
+        left: -12.5%;
+        top: -9%;
+}
+.i-right>:nth-child(2)
+{
+        transform: scale(0.7);
+        left: -3rem;
+        top: -16%;
+}
+.i-right>:nth-child(3)
+{
+        transform: scale(1.4);
+        left: 20%;
+        top: -0.5rem;
+        
+}
+.i-right>:nth-child(4)
+{
+        transform: scale(0.5);
+        left: -25%;
+        top:-5rem;       
+}
+.blur
+{
+        position: absolute;
+        width: 22rem;
+        height: 14rem;
+        border-radius: 50%;
+        background: #edd0ff;
+        filter: blur(72px);
+        top: -20%;
+        left: 45%;
+        z-index: -9;
+}
+
+@media (width<=480px) {
+        .intro{
+                       flex-direction: column;
+                       height: 56rem;
+                       margin-bottom: -2rem;
+        }
+        .i-right{
+                transform: scale(0.7);
+                left: -3rem;
+        }
+        .i-right>.i-blur{
+                display: none;
+        }
+        .floatingdiv:nth-of-type(1){
+                  top: -6rem!important;
+        }
+      .i-right>.v2
+      {
+       top: -6rem;   
+      }
+      .i-right>.v1
+      {
+       top: -3rem;   
+      }
+
+}

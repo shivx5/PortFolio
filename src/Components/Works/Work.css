@@ -1,0 +1,119 @@
+.work
+{
+        padding: 0 3rem 0 3rem;
+        display: flex;
+        height: 70vh;
+        margin-top: 1rem;
+        gap: 4rem;
+       
+}
+.w-right
+{
+        position: relative;
+}
+.w-main-circle
+{
+        left: 5rem;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 100%;
+        box-shadow: var(--smboxShadow);
+        position: relative;
+        top: 2rem;
+        background: white;
+}
+.w-main-circle>*
+{
+        position: absolute;
+        
+}
+.w-sec-circle:nth-child(1)
+{
+        left: 6rem;
+        top: -3rem;
+}
+.w-sec-circle:nth-child(2)
+{
+        left: -3rem;
+        top: 5rem;
+}
+.w-sec-circle:nth-child(3)
+{
+        left: 6rem;
+        top: 5rem;
+}
+.w-sec-circle:nth-child(4)
+{
+        left: 15rem;
+        top: 5rem;
+}
+.w-sec-circle:nth-child(5)
+{
+        left: 7rem;
+        top: 14rem;
+}
+.w-sec-circle{
+        height: 6rem;
+        width: 6rem;
+        position: absolute;
+        /* background-color: aquamarine; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 5px solid #ebebeb;
+        background: white;
+}
+.w-sec-circle>img{
+        transform: scale(0.5);
+}
+.w-circle{
+        height: 13rem;
+        width: 13rem;
+        border-radius: 100%;
+        z-index: -1;
+}
+.yellowcircle
+{
+        position:absolute;
+        background-color: #F5C32c;
+left: 12rem;
+top: 2rem;
+}
+.bluecircle
+{
+        position: absolute;
+background-color: #472cf5;
+left: 12rem;
+top: 9rem;
+
+}
+@media (width<=480px)
+{
+        .work{
+                padding: 0;
+                flex-direction: column;
+                height: 60rem;
+                gap: 3rem;
+                
+               
+        }
+        .w-right{
+                display: flex;
+                align-items: flex-start;
+                justify-content: start;
+                transform: scale(0.7);
+        }
+        .w-main-circle{
+                position: static;
+        }
+        .bluecircle{
+                left: 6rem;
+                top: -1rem;
+        }
+        .yellowcircle{
+                left: 6rem;
+                top: 6rem;
+        }
+        
+}

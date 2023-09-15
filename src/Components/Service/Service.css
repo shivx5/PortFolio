@@ -1,0 +1,75 @@
+.service
+{
+        padding: 0 3rem 0 3rem;
+        height: 90vh;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        margin-bottom: 8rem;
+        margin-top: 4rem;
+        margin-left: 2rem;
+}
+.s-left
+{
+        display: flex;
+        flex-direction: column;
+}
+.s-left>:nth-child(1)
+{
+        color: var(--black);
+        font-size: 3rem;
+        font-weight: bold;
+
+}
+.s-left>:nth-child(2)
+{
+        color: var(--orange);
+        font-size: 3rem;
+        font-weight: bold;
+
+}
+.s-left>:nth-child(3)
+{
+        color: var(--grey);
+        font-size: 14px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         margin-top: 1rem;
+}
+.s-button
+{
+        width: 8rem;
+        height: 6vh;
+        margin-top: 2rem;
+}
+.Cards
+{
+position: relative;
+}
+.Cards>*
+{
+        position: absolute;
+}
+.s-blur2
+{
+        size: 50px;
+}
+@media (width<=480px) {
+        .service{
+                flex-direction: column;
+                margin-top: 0;
+                gap: 5rem;
+                height: 66rem;
+                padding: 0;  
+        }
+        .Cards{
+                display: flex;
+                flex-direction: column;
+                gap: 20rem;
+        }
+        .Cards>*
+        {
+                position: static;
+
+        }
+       
+}
