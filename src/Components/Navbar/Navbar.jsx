@@ -30,11 +30,15 @@ export  function Navbar() {
                                 </Link> <Link spy={true} to='Testimonials' smooth={true} >
                                 <li>Testimonials</li>
                                 </Link>
+                                
                         </ul>
                 </div>
+                <Link to='Contact' spy={true} smooth={true}>
                 <button className="button n-button">
                         contact 
                 </button>
+                </Link>
+              
 
         </div>
       

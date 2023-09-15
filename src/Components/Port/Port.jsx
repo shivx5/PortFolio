@@ -7,6 +7,9 @@ import gifts from "../../img/gifts.png"
 import port from "../../img/port.png"
 import HOC from "../../img/hoc.png"
 import comm from "../../img/e1.png"
+import wall from "../../img/wall.png"
+
+
 import { ThemeProvider,themeContext } from '../../Context'
 
 
@@ -32,6 +35,9 @@ export default function Port() {
         </SwiperSlide>
         <SwiperSlide>
                 <img src={comm}></img>
+        </SwiperSlide>
+        <SwiperSlide>
+                <img src={wall}></img>
         </SwiperSlide>
        </Swiper>
     </div>

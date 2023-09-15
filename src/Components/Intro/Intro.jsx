@@ -12,6 +12,7 @@ import glassesimoji from '../../img/glassesimoji.png';
 import Floadingdiv from '../FloatingDIv/Floadingdiv';
 import purpleblur from '../../img/purpleblur.png';
 import {motion} from 'framer-motion'
+import {Link} from 'react-scroll'
 import { ThemeProvider, themeContext } from '../../Context';
 export default function Intro() 
 {
@@ -28,12 +29,12 @@ export default function Intro()
                    <span>Shiva Ram</span>
                    <span>Frontend Developer with the high level of experience in webDesigning and development,producing the quality work</span>
                         </div>
-                  
-                    <button className='button i-button'>Hire me</button>
+                    <Link to='Contact' spy={true} smooth={true}><button className='button i-button'>Hire me</button></Link>
+                    
                     <div className="i-icons">
-                        <img src={Github}></img>
-                        <img src={Linkedin}></img>
-                        <img src={Insta}></img>
+                        <a href='https://github.com/shivx5' target='_blank'><img src={Github}></img></a>                     
+                        <a href='https://www.linkedin.com/in/siva-raman-shiva' target='_blank'><img src={Linkedin}></img></a>
+                        <a href='https://www.instagram.com/sivh.x/' target='_blank'><img src={Insta}></img></a>
                     </div>
                 </div>
 

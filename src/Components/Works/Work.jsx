@@ -7,6 +7,7 @@ import Facebook from '../../img/Facebook.png'
 import Amazon from '../../img/amazon.png'
 import {motion} from 'framer-motion';
 import { ThemeProvider,themeContext } from '../../Context'
+import resume from '../../fonts/Resume.pdf'
 
 export default function Work() {
         const them=useContext(themeContext);
@@ -24,7 +25,9 @@ export default function Work() {
          I Worked with console applications using Java and C..<br/>
          
         </span>
+        <a href={resume} download>
          <button className='s-button button'>Download cv</button>
+         </a>
         <div  className="blur w-blur" style={{background:'#C1F5FF',top:'63rem',width:'21rem',height:'11rem',left:'-7rem'}}></div>
         {/* <div  className="blur" style={{background:'var(--purple)',top:'54rem',left:'45rem',filter:'blur(70px)'}}></div> */}
 

@@ -12,9 +12,18 @@ export default function Footer() {
       <div className='f-content'>
       <span>shivaramanrajendiran@gmail.com</span>
       <div className='f-icons'>
+      <a href='https://www.instagram.com/sivh.x/' target='_blank'>
         <Insta size='3rem' color='white'/>
-        <Facebook size='3rem' color='white'/>
-        <Github size='3rem' color='white'/>
+      </a>
+        <a href='https://www.facebook.com/profile.php?id=100017045201500' target='_blank'>
+          <Facebook size='3rem' color='white'/>
+          </a>
+        
+        
+        <a href='https://github.com/shivx5' target='_blank'>
+          <Github size='3rem' color='white'/>
+        </a>                     
+
       </div>
       </div>
     </div>
