@@ -59,8 +59,8 @@ export default function Intro()
 
 
                         <motion.div 
-                        initial={{left:'10rem',top:'18rem'}}
-                        whileInView={{left:'10%'}}
+                        initial={{left:'-5rem',top:'18rem'}}
+                        whileInView={{left:'-1rem'}}
                         transition={transition}
                         className='floatingdiv'
                         style={{top:'17rem',left:'1%'}}>
